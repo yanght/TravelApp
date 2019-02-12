@@ -10,7 +10,7 @@ namespace TravelApp.Travel
     public class Category : Entity<int>
     {
         [Required]
-        [MaxLength(10)]
+        [MaxLength(50)]
         public virtual string CategoryName { get; set; }
 
         [Required]
@@ -18,7 +18,13 @@ namespace TravelApp.Travel
         public virtual int ParentId { get; set; }
 
         [Required]
-        [DefaultValue(true)]
-        public virtual bool Enable { get; set; }
+        [DefaultValue(0)]
+        public virtual int State { get; set; }
+
+        [Required]
+        [DefaultValue(0)]
+        public virtual int Sort { get; set; }
+
+
     }
 }
