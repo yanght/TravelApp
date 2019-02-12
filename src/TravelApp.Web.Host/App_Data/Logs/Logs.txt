@@ -1,0 +1,543 @@
+DEBUG 2019-02-12 16:56:39,647 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-02-12 16:56:39,670 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-02-12 16:56:39,685 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TravelApp.Web.Host.Startup.TravelAppWebHostModule, TravelApp.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 16:56:39,688 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TravelApp.TravelAppWebCoreModule, TravelApp.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 16:56:39,688 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TravelApp.TravelAppApplicationModule, TravelApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 16:56:39,689 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TravelApp.TravelAppCoreModule, TravelApp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 16:56:39,689 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 16:56:39,689 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 16:56:39,690 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 16:56:39,690 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 16:56:39,690 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TravelApp.EntityFrameworkCore.TravelAppEntityFrameworkModule, TravelApp.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 16:56:39,691 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 16:56:39,691 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 16:56:39,691 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 16:56:39,691 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 16:56:39,691 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 16:56:39,692 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 16:56:39,695 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-02-12 16:56:39,746 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-02-12 16:56:39,746 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-02-12 16:56:39,746 [1    ] o.Configuration.LanguageManagementConfig - Converted TravelApp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-02-12 16:56:39,746 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-02-12 16:56:39,994 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: TravelApp.EntityFrameworkCore.TravelAppDbContext, TravelApp.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 16:56:40,354 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-02-12 16:56:40,408 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-02-12 16:56:40,452 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-02-12 16:56:40,477 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: TravelApp
+DEBUG 2019-02-12 16:56:40,507 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-02-12 16:56:40,538 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-02-12 16:56:40,581 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2019-02-12 16:56:40,581 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TravelApp.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-02-12 16:56:40,587 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TravelApp.Users.Dto.CreateUserDto
+DEBUG 2019-02-12 16:56:40,588 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TravelApp.Users.Dto.UserDto
+DEBUG 2019-02-12 16:56:40,588 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TravelApp.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-02-12 16:56:40,588 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TravelApp.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-02-12 16:56:40,588 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TravelApp.Roles.Dto.CreateRoleDto
+DEBUG 2019-02-12 16:56:40,588 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TravelApp.Roles.Dto.PermissionDto
+DEBUG 2019-02-12 16:56:40,589 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TravelApp.Roles.Dto.RoleDto
+DEBUG 2019-02-12 16:56:40,589 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TravelApp.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-02-12 16:56:40,589 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TravelApp.MultiTenancy.Dto.TenantDto
+INFO  2019-02-12 16:57:16,959 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2019-02-12 16:57:18,200 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action TravelApp.Web.Host.Controllers.HomeController.Index (TravelApp.Web.Host)
+INFO  2019-02-12 16:57:18,585 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TravelApp.Web.Host.Controllers.HomeController.Index (TravelApp.Web.Host) - Validation state: Valid
+INFO  2019-02-12 16:57:18,588 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TravelApp.Web.Host.Controllers.HomeController.Index (TravelApp.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 1.8695ms.
+INFO  2019-02-12 16:57:18,800 [12   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2019-02-12 16:57:18,815 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TravelApp.Web.Host.Controllers.HomeController.Index (TravelApp.Web.Host) in 611.3641ms
+INFO  2019-02-12 16:57:18,877 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1922.6956ms 302 
+INFO  2019-02-12 16:57:18,879 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2019-02-12 16:57:18,890 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.4949ms 301 
+INFO  2019-02-12 16:57:18,890 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2019-02-12 16:57:18,916 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 25.5858ms 200 text/html
+INFO  2019-02-12 16:57:26,410 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2019-02-12 16:57:26,418 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action TravelApp.Web.Host.Controllers.HomeController.Index (TravelApp.Web.Host)
+INFO  2019-02-12 16:57:26,419 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TravelApp.Web.Host.Controllers.HomeController.Index (TravelApp.Web.Host) - Validation state: Valid
+INFO  2019-02-12 16:57:26,419 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TravelApp.Web.Host.Controllers.HomeController.Index (TravelApp.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.0058ms.
+INFO  2019-02-12 16:57:26,533 [12   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2019-02-12 16:57:26,533 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TravelApp.Web.Host.Controllers.HomeController.Index (TravelApp.Web.Host) in 115.5823ms
+INFO  2019-02-12 16:57:26,533 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 123.7569ms 302 
+INFO  2019-02-12 16:57:26,535 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2019-02-12 16:57:26,536 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.5671ms 301 
+INFO  2019-02-12 16:57:26,537 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2019-02-12 16:57:26,538 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.7774ms 200 text/html
+INFO  2019-02-12 16:57:26,561 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2019-02-12 16:57:26,563 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2019-02-12 16:57:26,564 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2019-02-12 16:57:26,564 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2019-02-12 16:57:26,565 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2019-02-12 16:57:26,604 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'C:\Users\yannis\Downloads\TravelApp (1)\4.5.0\aspnet-core\src\TravelApp.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2019-02-12 16:57:26,604 [14   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'C:\Users\yannis\Downloads\TravelApp (1)\4.5.0\aspnet-core\src\TravelApp.Web.Host\wwwroot\swagger\ui\abp.swagger.js'
+INFO  2019-02-12 16:57:26,604 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 40.1794ms 200 application/javascript
+INFO  2019-02-12 16:57:26,604 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 39.6752ms 200 application/javascript
+INFO  2019-02-12 16:57:26,614 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+INFO  2019-02-12 16:57:26,619 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 57.8131ms 200 text/css
+INFO  2019-02-12 16:57:26,624 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+INFO  2019-02-12 16:57:26,624 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 60.1486ms 200 application/javascript
+INFO  2019-02-12 16:57:26,630 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+INFO  2019-02-12 16:57:26,630 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 66.7944ms 200 application/javascript
+INFO  2019-02-12 16:57:27,330 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2019-02-12 16:57:27,383 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/favicon-32x32.png  
+INFO  2019-02-12 16:57:27,384 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2019-02-12 16:57:27,384 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.9241ms 200 image/png
+INFO  2019-02-12 16:57:27,567 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 236.7641ms 200 application/json;charset=utf-8
+INFO  2019-02-12 16:57:41,211 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Account/IsTenantAvailable application/json-patch+json 29
+INFO  2019-02-12 16:57:41,219 [10   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-02-12 16:57:41,219 [10   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-02-12 16:57:41,260 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "IsTenantAvailable", controller = "Account"}. Executing action TravelApp.Authorization.Accounts.AccountAppService.IsTenantAvailable (TravelApp.Application)
+INFO  2019-02-12 16:57:41,260 [10   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-02-12 16:57:41,260 [10   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-02-12 16:57:41,450 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TravelApp.Authorization.Accounts.AccountAppService.IsTenantAvailable (TravelApp.Application) with arguments (TravelApp.Authorization.Accounts.Dto.IsTenantAvailableInput) - Validation state: Valid
+INFO  2019-02-12 16:57:41,569 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TravelApp.Authorization.Accounts.AccountAppService.IsTenantAvailable (TravelApp.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 118.3878ms.
+INFO  2019-02-12 16:57:41,754 [9    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-02-12 16:57:41,775 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TravelApp.Authorization.Accounts.AccountAppService.IsTenantAvailable (TravelApp.Application) in 515.1123ms
+INFO  2019-02-12 16:57:41,777 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 565.4835ms 200 application/json; charset=utf-8
+INFO  2019-02-12 16:57:48,803 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2019-02-12 16:57:48,806 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.7432ms 200 text/html
+INFO  2019-02-12 16:57:48,820 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2019-02-12 16:57:48,820 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2019-02-12 16:57:48,820 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2019-02-12 16:57:48,827 [14   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui.css was not modified
+INFO  2019-02-12 16:57:48,827 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-standalone-preset.js was not modified
+INFO  2019-02-12 16:57:48,827 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-bundle.js was not modified
+INFO  2019-02-12 16:57:48,828 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.7686ms 304 application/javascript
+INFO  2019-02-12 16:57:48,828 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.3872ms 304 application/javascript
+INFO  2019-02-12 16:57:48,828 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.4408ms 304 text/css
+INFO  2019-02-12 16:57:49,146 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2019-02-12 16:57:49,152 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/favicon-32x32.png  
+INFO  2019-02-12 16:57:49,153 [21   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2019-02-12 16:57:49,153 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.9228ms 200 image/png
+INFO  2019-02-12 16:57:49,157 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.3737ms 200 application/json;charset=utf-8
+INFO  2019-02-12 16:57:50,041 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2019-02-12 16:57:50,048 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.863ms 200 application/json;charset=utf-8
+INFO  2019-02-12 16:57:50,094 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/favicon.ico  
+INFO  2019-02-12 16:57:50,095 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.1592ms 404 
+INFO  2019-02-12 16:57:52,945 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2019-02-12 16:57:52,947 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.6054ms 200 text/html
+INFO  2019-02-12 16:57:52,963 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2019-02-12 16:57:52,964 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2019-02-12 16:57:52,964 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2019-02-12 16:57:52,964 [20   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui.css was not modified
+INFO  2019-02-12 16:57:52,964 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.3872ms 304 text/css
+INFO  2019-02-12 16:57:52,965 [14   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-standalone-preset.js was not modified
+INFO  2019-02-12 16:57:52,965 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.7513ms 304 application/javascript
+INFO  2019-02-12 16:57:52,965 [21   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-bundle.js was not modified
+INFO  2019-02-12 16:57:52,965 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.1364ms 304 application/javascript
+INFO  2019-02-12 16:57:53,043 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2019-02-12 16:57:53,050 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/favicon-32x32.png  
+INFO  2019-02-12 16:57:53,051 [21   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2019-02-12 16:57:53,051 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.2429ms 200 image/png
+INFO  2019-02-12 16:57:53,055 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.9978ms 200 application/json;charset=utf-8
+INFO  2019-02-12 16:58:45,476 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetRolesAsync  
+INFO  2019-02-12 16:58:45,505 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetRolesAsync", controller = "Role"}. Executing action TravelApp.Roles.RoleAppService.GetRolesAsync (TravelApp.Application)
+WARN  2019-02-12 16:58:45,813 [18   ] Mvc.Authorization.AbpAuthorizationFilter - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 44
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 112
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 58
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 44
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 112
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 58
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+INFO  2019-02-12 16:58:45,817 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2019-02-12 16:58:45,819 [18   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-02-12 16:58:45,821 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TravelApp.Roles.RoleAppService.GetRolesAsync (TravelApp.Application) in 316.0064ms
+INFO  2019-02-12 16:58:45,821 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 344.6085ms 401 application/json; charset=utf-8
+INFO  2019-02-12 16:58:51,316 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetRolesAsync?Permission=1  
+INFO  2019-02-12 16:58:51,323 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetRolesAsync", controller = "Role"}. Executing action TravelApp.Roles.RoleAppService.GetRolesAsync (TravelApp.Application)
+WARN  2019-02-12 16:58:51,324 [22   ] Mvc.Authorization.AbpAuthorizationFilter - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 44
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 112
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 58
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 44
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 112
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 58
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+INFO  2019-02-12 16:58:51,324 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2019-02-12 16:58:51,324 [22   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-02-12 16:58:51,324 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TravelApp.Roles.RoleAppService.GetRolesAsync (TravelApp.Application) in 1.5632ms
+INFO  2019-02-12 16:58:51,325 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.9164ms 401 application/json; charset=utf-8
+INFO  2019-02-12 16:58:58,143 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAll  
+INFO  2019-02-12 16:58:58,150 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "Role"}. Executing action TravelApp.Roles.RoleAppService.GetAll (TravelApp.Application)
+INFO  2019-02-12 16:58:58,240 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TravelApp.Roles.RoleAppService.GetAll (TravelApp.Application) with arguments (TravelApp.Roles.Dto.PagedRoleResultRequestDto) - Validation state: Valid
+WARN  2019-02-12 16:58:58,378 [22   ] Mvc.ExceptionHandling.AbpExceptionFilter - Current user did not login to the application!
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 44
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 112
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 58
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationInterceptor.Intercept(IInvocation invocation) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationInterceptor.cs:line 20
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 78
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.RoleAppServiceProxy.GetAll(PagedRoleResultRequestDto input)
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+INFO  2019-02-12 16:58:58,388 [22   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-02-12 16:58:58,388 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TravelApp.Roles.RoleAppService.GetAll (TravelApp.Application) in 237.8957ms
+INFO  2019-02-12 16:58:58,388 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 245.8773ms 401 application/json; charset=utf-8
+INFO  2019-02-12 16:59:15,350 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetAll  
+INFO  2019-02-12 16:59:15,356 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "User"}. Executing action TravelApp.Users.UserAppService.GetAll (TravelApp.Application)
+INFO  2019-02-12 16:59:15,560 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TravelApp.Users.UserAppService.GetAll (TravelApp.Application) with arguments (TravelApp.Users.Dto.PagedUserResultRequestDto) - Validation state: Valid
+WARN  2019-02-12 16:59:15,700 [23   ] Mvc.ExceptionHandling.AbpExceptionFilter - Current user did not login to the application!
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 44
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 112
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 58
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationInterceptor.Intercept(IInvocation invocation) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationInterceptor.cs:line 20
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 78
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.UserAppServiceProxy.GetAll(PagedUserResultRequestDto input)
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+INFO  2019-02-12 16:59:15,701 [23   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-02-12 16:59:15,701 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TravelApp.Users.UserAppService.GetAll (TravelApp.Application) in 345.0037ms
+INFO  2019-02-12 16:59:15,701 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 351.7475ms 401 application/json; charset=utf-8
+INFO  2019-02-12 16:59:31,837 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/account/login  
+INFO  2019-02-12 16:59:31,838 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.6391ms 404 
+INFO  2019-02-12 16:59:31,982 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/account/login  
+INFO  2019-02-12 16:59:31,982 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.6716ms 404 
+INFO  2019-02-12 17:00:48,689 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2019-02-12 17:00:48,696 [26   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action TravelApp.Web.Host.Controllers.HomeController.Index (TravelApp.Web.Host)
+INFO  2019-02-12 17:00:48,697 [26   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TravelApp.Web.Host.Controllers.HomeController.Index (TravelApp.Web.Host) - Validation state: Valid
+INFO  2019-02-12 17:00:48,698 [26   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TravelApp.Web.Host.Controllers.HomeController.Index (TravelApp.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 0.0012ms.
+INFO  2019-02-12 17:00:48,802 [26   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2019-02-12 17:00:48,802 [26   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TravelApp.Web.Host.Controllers.HomeController.Index (TravelApp.Web.Host) in 105.9119ms
+INFO  2019-02-12 17:00:48,803 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 113.3612ms 302 
+INFO  2019-02-12 17:00:48,805 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2019-02-12 17:00:48,806 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.3618ms 200 text/html
+INFO  2019-02-12 17:00:48,826 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2019-02-12 17:00:48,827 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2019-02-12 17:00:48,828 [32   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-bundle.js was not modified
+INFO  2019-02-12 17:00:48,828 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.067ms 304 application/javascript
+INFO  2019-02-12 17:00:48,829 [30   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui.css was not modified
+INFO  2019-02-12 17:00:48,829 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.5133ms 304 text/css
+INFO  2019-02-12 17:00:48,829 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2019-02-12 17:00:48,829 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2019-02-12 17:00:48,829 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2019-02-12 17:00:48,829 [32   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger/ui/abp.swagger.js was not modified
+INFO  2019-02-12 17:00:48,829 [26   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger/ui/abp.js was not modified
+INFO  2019-02-12 17:00:48,829 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.4354ms 304 application/javascript
+INFO  2019-02-12 17:00:48,829 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.222ms 304 application/javascript
+INFO  2019-02-12 17:00:48,829 [30   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-standalone-preset.js was not modified
+INFO  2019-02-12 17:00:48,829 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.5813ms 304 application/javascript
+INFO  2019-02-12 17:00:49,121 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2019-02-12 17:00:49,129 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.7323ms 200 application/json;charset=utf-8
+INFO  2019-02-12 17:11:23,129 [57   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/Get?Id=1  
+INFO  2019-02-12 17:11:23,143 [57   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "Get", controller = "User"}. Executing action TravelApp.Users.UserAppService.Get (TravelApp.Application)
+INFO  2019-02-12 17:11:23,154 [57   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TravelApp.Users.UserAppService.Get (TravelApp.Application) with arguments (Abp.Application.Services.Dto.EntityDto`1[System.Int64]) - Validation state: Valid
+WARN  2019-02-12 17:11:23,356 [53   ] Mvc.ExceptionHandling.AbpExceptionFilter - 当前用户没有登录到系统！
+Abp.Authorization.AbpAuthorizationException: 当前用户没有登录到系统！
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 44
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 112
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 58
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationInterceptor.Intercept(IInvocation invocation) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationInterceptor.cs:line 20
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 78
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.UserAppServiceProxy.Get(EntityDto`1 input)
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+INFO  2019-02-12 17:11:23,357 [53   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-02-12 17:11:23,357 [53   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TravelApp.Users.UserAppService.Get (TravelApp.Application) in 214.2123ms
+INFO  2019-02-12 17:11:23,357 [53   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 228.0077ms 401 application/json; charset=utf-8
+INFO  2019-02-12 17:11:47,387 [61   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Account/IsTenantAvailable application/json 21
+INFO  2019-02-12 17:11:47,387 [61   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-02-12 17:11:47,387 [61   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-02-12 17:11:47,390 [61   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "IsTenantAvailable", controller = "Account"}. Executing action TravelApp.Authorization.Accounts.AccountAppService.IsTenantAvailable (TravelApp.Application)
+INFO  2019-02-12 17:11:47,390 [61   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-02-12 17:11:47,390 [61   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-02-12 17:11:47,395 [61   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TravelApp.Authorization.Accounts.AccountAppService.IsTenantAvailable (TravelApp.Application) with arguments (TravelApp.Authorization.Accounts.Dto.IsTenantAvailableInput) - Validation state: Valid
+INFO  2019-02-12 17:11:47,461 [61   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TravelApp.Authorization.Accounts.AccountAppService.IsTenantAvailable (TravelApp.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 65.3457ms.
+INFO  2019-02-12 17:11:47,596 [59   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-02-12 17:11:47,596 [59   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TravelApp.Authorization.Accounts.AccountAppService.IsTenantAvailable (TravelApp.Application) in 206.422ms
+INFO  2019-02-12 17:11:47,597 [59   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 209.4775ms 200 application/json; charset=utf-8
+INFO  2019-02-12 17:11:54,875 [59   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Account/IsTenantAvailable application/json 23
+INFO  2019-02-12 17:11:54,875 [59   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-02-12 17:11:54,875 [59   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-02-12 17:11:54,878 [59   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "IsTenantAvailable", controller = "Account"}. Executing action TravelApp.Authorization.Accounts.AccountAppService.IsTenantAvailable (TravelApp.Application)
+INFO  2019-02-12 17:11:54,878 [59   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-02-12 17:11:54,878 [59   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-02-12 17:11:54,880 [59   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TravelApp.Authorization.Accounts.AccountAppService.IsTenantAvailable (TravelApp.Application) with arguments (TravelApp.Authorization.Accounts.Dto.IsTenantAvailableInput) - Validation state: Valid
+INFO  2019-02-12 17:11:54,947 [61   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TravelApp.Authorization.Accounts.AccountAppService.IsTenantAvailable (TravelApp.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 67.0213ms.
+INFO  2019-02-12 17:11:55,084 [61   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-02-12 17:11:55,084 [61   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TravelApp.Authorization.Accounts.AccountAppService.IsTenantAvailable (TravelApp.Application) in 205.9409ms
+INFO  2019-02-12 17:11:55,084 [61   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 209.6633ms 200 application/json; charset=utf-8
+INFO  2019-02-12 17:11:55,088 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/TokenAuth/Authenticate application/json 51
+INFO  2019-02-12 17:11:55,088 [60   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-02-12 17:11:55,089 [60   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-02-12 17:11:55,101 [60   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing action TravelApp.Controllers.TokenAuthController.Authenticate (TravelApp.Web.Core)
+INFO  2019-02-12 17:11:55,102 [60   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-02-12 17:11:55,102 [60   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-02-12 17:11:55,261 [60   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TravelApp.Controllers.TokenAuthController.Authenticate (TravelApp.Web.Core) with arguments (TravelApp.Models.TokenAuth.AuthenticateModel) - Validation state: Valid
+WARN  2019-02-12 17:11:55,637 [53   ] icrosoft.AspNetCore.Identity.UserManager - Invalid password for user 2.
+WARN  2019-02-12 17:11:56,722 [61   ] Mvc.ExceptionHandling.AbpExceptionFilter - 登录失败!
+Abp.UI.UserFriendlyException: 登录失败!
+   at TravelApp.Controllers.TokenAuthController.GetLoginResultAsync(String usernameOrEmailAddress, String password, String tenancyName)
+   at TravelApp.Controllers.TokenAuthController.Authenticate(AuthenticateModel model)
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+INFO  2019-02-12 17:11:56,723 [61   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-02-12 17:11:56,723 [61   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TravelApp.Controllers.TokenAuthController.Authenticate (TravelApp.Web.Core) in 1621.6735ms
+INFO  2019-02-12 17:11:56,723 [61   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1635.0553ms 500 application/json; charset=utf-8
+INFO  2019-02-12 17:12:01,489 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2019-02-12 17:12:01,490 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.8666ms 200 text/html
+INFO  2019-02-12 17:12:01,506 [61   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2019-02-12 17:12:01,506 [61   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui.css was not modified
+INFO  2019-02-12 17:12:01,507 [61   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.5904ms 304 text/css
+INFO  2019-02-12 17:12:01,507 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2019-02-12 17:12:01,507 [60   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-bundle.js was not modified
+INFO  2019-02-12 17:12:01,507 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.3779ms 304 application/javascript
+INFO  2019-02-12 17:12:01,507 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2019-02-12 17:12:01,507 [60   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger/ui/abp.js was not modified
+INFO  2019-02-12 17:12:01,508 [61   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2019-02-12 17:12:01,508 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.3098ms 304 application/javascript
+INFO  2019-02-12 17:12:01,508 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2019-02-12 17:12:01,508 [61   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-standalone-preset.js was not modified
+INFO  2019-02-12 17:12:01,508 [61   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.5074ms 304 application/javascript
+INFO  2019-02-12 17:12:01,508 [60   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger/ui/abp.swagger.js was not modified
+INFO  2019-02-12 17:12:01,508 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.1531ms 304 application/javascript
+INFO  2019-02-12 17:12:01,845 [61   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2019-02-12 17:12:01,853 [66   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/favicon-32x32.png  
+INFO  2019-02-12 17:12:01,854 [66   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2019-02-12 17:12:01,854 [66   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.591ms 200 image/png
+INFO  2019-02-12 17:12:01,857 [61   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 12.1367ms 200 application/json;charset=utf-8
+INFO  2019-02-12 17:12:08,214 [66   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Account/IsTenantAvailable application/json-patch+json 29
+INFO  2019-02-12 17:12:08,214 [66   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-02-12 17:12:08,214 [66   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-02-12 17:12:08,217 [66   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "IsTenantAvailable", controller = "Account"}. Executing action TravelApp.Authorization.Accounts.AccountAppService.IsTenantAvailable (TravelApp.Application)
+INFO  2019-02-12 17:12:08,217 [66   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-02-12 17:12:08,217 [66   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-02-12 17:12:08,219 [66   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TravelApp.Authorization.Accounts.AccountAppService.IsTenantAvailable (TravelApp.Application) with arguments (TravelApp.Authorization.Accounts.Dto.IsTenantAvailableInput) - Validation state: Valid
+INFO  2019-02-12 17:12:08,285 [53   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TravelApp.Authorization.Accounts.AccountAppService.IsTenantAvailable (TravelApp.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 65.7102ms.
+INFO  2019-02-12 17:12:08,422 [53   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-02-12 17:12:08,422 [53   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TravelApp.Authorization.Accounts.AccountAppService.IsTenantAvailable (TravelApp.Application) in 204.5427ms
+INFO  2019-02-12 17:12:08,422 [53   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 208.1438ms 200 application/json; charset=utf-8
+INFO  2019-02-12 17:12:16,313 [53   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2019-02-12 17:12:16,315 [53   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.1169ms 200 text/html
+INFO  2019-02-12 17:12:16,331 [53   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2019-02-12 17:12:16,331 [61   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2019-02-12 17:12:16,331 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2019-02-12 17:12:16,331 [61   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-bundle.js was not modified
+INFO  2019-02-12 17:12:16,331 [53   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui.css was not modified
+INFO  2019-02-12 17:12:16,331 [61   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.4386ms 304 application/javascript
+INFO  2019-02-12 17:12:16,331 [53   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.5116ms 304 text/css
+INFO  2019-02-12 17:12:16,332 [60   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-standalone-preset.js was not modified
+INFO  2019-02-12 17:12:16,332 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.2961ms 304 application/javascript
+INFO  2019-02-12 17:12:16,418 [59   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2019-02-12 17:12:16,424 [53   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/favicon-32x32.png  
+INFO  2019-02-12 17:12:16,425 [53   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2019-02-12 17:12:16,425 [53   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.557ms 200 image/png
+INFO  2019-02-12 17:12:16,429 [59   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.1598ms 200 application/json;charset=utf-8
+DEBUG 2019-02-12 17:40:17,404 [2    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2019-02-12 17:40:17,406 [2    ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-02-12 17:40:17,407 [2    ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-02-12 17:40:17,407 [2    ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2019-02-12 18:28:59,660 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-02-12 18:28:59,688 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2019-02-12 18:28:59,705 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TravelApp.Web.Host.Startup.TravelAppWebHostModule, TravelApp.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 18:28:59,708 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TravelApp.TravelAppWebCoreModule, TravelApp.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 18:28:59,709 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TravelApp.TravelAppApplicationModule, TravelApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 18:28:59,709 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TravelApp.TravelAppCoreModule, TravelApp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 18:28:59,709 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 18:28:59,709 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 18:28:59,710 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 18:28:59,710 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 18:28:59,711 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TravelApp.EntityFrameworkCore.TravelAppEntityFrameworkModule, TravelApp.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 18:28:59,711 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 18:28:59,712 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 18:28:59,712 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 18:28:59,712 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Dapper.AbpDapperModule, Abp.Dapper, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 18:28:59,713 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 18:28:59,713 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 18:28:59,713 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 18:28:59,717 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2019-02-12 18:28:59,779 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-02-12 18:28:59,779 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-02-12 18:28:59,779 [1    ] o.Configuration.LanguageManagementConfig - Converted TravelApp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-02-12 18:28:59,779 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-02-12 18:29:00,052 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: TravelApp.EntityFrameworkCore.TravelAppDbContext, TravelApp.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-02-12 18:29:00,496 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-02-12 18:29:00,574 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-02-12 18:29:00,625 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-02-12 18:29:00,648 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: TravelApp
+DEBUG 2019-02-12 18:29:00,678 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-02-12 18:29:00,712 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-02-12 18:29:00,762 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2019-02-12 18:29:00,762 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TravelApp.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-02-12 18:29:00,769 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TravelApp.Users.Dto.CreateUserDto
+DEBUG 2019-02-12 18:29:00,770 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TravelApp.Users.Dto.UserDto
+DEBUG 2019-02-12 18:29:00,770 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TravelApp.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-02-12 18:29:00,770 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TravelApp.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-02-12 18:29:00,771 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TravelApp.Roles.Dto.CreateRoleDto
+DEBUG 2019-02-12 18:29:00,771 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TravelApp.Roles.Dto.PermissionDto
+DEBUG 2019-02-12 18:29:00,771 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TravelApp.Roles.Dto.RoleDto
+DEBUG 2019-02-12 18:29:00,771 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TravelApp.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-02-12 18:29:00,772 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TravelApp.MultiTenancy.Dto.TenantDto
+INFO  2019-02-12 18:29:11,993 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2019-02-12 18:29:12,504 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 514.4554ms 200 text/html
+INFO  2019-02-12 18:29:12,518 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2019-02-12 18:29:12,518 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2019-02-12 18:29:12,518 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2019-02-12 18:29:12,518 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2019-02-12 18:29:12,521 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2019-02-12 18:29:12,548 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-bundle.js was not modified
+INFO  2019-02-12 18:29:12,548 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger/ui/abp.js was not modified
+INFO  2019-02-12 18:29:12,548 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger/ui/abp.swagger.js was not modified
+INFO  2019-02-12 18:29:12,548 [9    ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui.css was not modified
+INFO  2019-02-12 18:29:12,548 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-standalone-preset.js was not modified
+INFO  2019-02-12 18:29:12,555 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 36.7375ms 304 application/javascript
+INFO  2019-02-12 18:29:12,555 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 36.8131ms 304 application/javascript
+INFO  2019-02-12 18:29:12,555 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 36.7497ms 304 text/css
+INFO  2019-02-12 18:29:12,555 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 34.1947ms 304 application/javascript
+INFO  2019-02-12 18:29:12,555 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 36.6128ms 304 application/javascript
+INFO  2019-02-12 18:29:12,844 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2019-02-12 18:29:12,852 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/favicon-32x32.png  
+INFO  2019-02-12 18:29:12,872 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2019-02-12 18:29:12,873 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 20.3461ms 200 image/png
+INFO  2019-02-12 18:29:13,120 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 276.2695ms 200 application/json;charset=utf-8
+INFO  2019-02-12 18:29:24,501 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Category/FindById?id=1  0
+INFO  2019-02-12 18:29:24,509 [7    ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-02-12 18:29:24,510 [7    ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-02-12 18:29:25,537 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "FindById", controller = "Category"}. Executing action TravelApp.Travel.CategoryAppService.FindById (TravelApp.Application)
+INFO  2019-02-12 18:29:25,553 [7    ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-02-12 18:29:25,553 [7    ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+WARN  2019-02-12 18:29:25,898 [7    ] Mvc.Authorization.AbpAuthorizationFilter - Abp.Authorization.AbpAuthorizationException: 当前用户没有登录到系统！
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 44
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 112
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 58
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+Abp.Authorization.AbpAuthorizationException: 当前用户没有登录到系统！
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 44
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 112
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 58
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+INFO  2019-02-12 18:29:25,909 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2019-02-12 18:29:25,943 [7    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-02-12 18:29:25,972 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TravelApp.Travel.CategoryAppService.FindById (TravelApp.Application) in 429.8862ms
+INFO  2019-02-12 18:29:25,977 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1475.825ms 401 application/json; charset=utf-8
+INFO  2019-02-12 18:29:59,022 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Account/IsTenantAvailable application/json 23
+INFO  2019-02-12 18:29:59,022 [12   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-02-12 18:29:59,022 [12   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-02-12 18:29:59,032 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "IsTenantAvailable", controller = "Account"}. Executing action TravelApp.Authorization.Accounts.AccountAppService.IsTenantAvailable (TravelApp.Application)
+INFO  2019-02-12 18:29:59,032 [12   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-02-12 18:29:59,032 [12   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-02-12 18:29:59,390 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TravelApp.Authorization.Accounts.AccountAppService.IsTenantAvailable (TravelApp.Application) with arguments (TravelApp.Authorization.Accounts.Dto.IsTenantAvailableInput) - Validation state: Valid
+INFO  2019-02-12 18:29:59,531 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TravelApp.Authorization.Accounts.AccountAppService.IsTenantAvailable (TravelApp.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 137.4344ms.
+INFO  2019-02-12 18:30:00,059 [15   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-02-12 18:30:00,078 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TravelApp.Authorization.Accounts.AccountAppService.IsTenantAvailable (TravelApp.Application) in 1045.5835ms
+INFO  2019-02-12 18:30:00,091 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1068.5023ms 200 application/json; charset=utf-8
+INFO  2019-02-12 18:30:00,097 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/TokenAuth/Authenticate application/json 50
+INFO  2019-02-12 18:30:00,098 [15   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-02-12 18:30:00,098 [15   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-02-12 18:30:00,109 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing action TravelApp.Controllers.TokenAuthController.Authenticate (TravelApp.Web.Core)
+INFO  2019-02-12 18:30:00,109 [15   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-02-12 18:30:00,109 [15   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-02-12 18:30:00,422 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TravelApp.Controllers.TokenAuthController.Authenticate (TravelApp.Web.Core) with arguments (TravelApp.Models.TokenAuth.AuthenticateModel) - Validation state: Valid
+INFO  2019-02-12 18:30:02,095 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TravelApp.Controllers.TokenAuthController.Authenticate (TravelApp.Web.Core), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1672.8288ms.
+INFO  2019-02-12 18:30:02,653 [14   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-02-12 18:30:02,661 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TravelApp.Controllers.TokenAuthController.Authenticate (TravelApp.Web.Core) in 2551.8671ms
+INFO  2019-02-12 18:30:02,662 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2564.9208ms 200 application/json; charset=utf-8
+INFO  2019-02-12 18:30:06,713 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Category/FindById?id=1  0
+INFO  2019-02-12 18:30:06,713 [17   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-02-12 18:30:06,713 [17   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-02-12 18:30:06,763 [17   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2019-02-12 18:30:07,335 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "FindById", controller = "Category"}. Executing action TravelApp.Travel.CategoryAppService.FindById (TravelApp.Application)
+INFO  2019-02-12 18:30:07,335 [17   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-02-12 18:30:07,335 [17   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-02-12 18:30:07,599 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TravelApp.Travel.CategoryAppService.FindById (TravelApp.Application) with arguments (1) - Validation state: Valid
+ERROR 2019-02-12 18:30:08,041 [17   ] Mvc.ExceptionHandling.AbpExceptionFilter - There is no such an entity. Entity type: TravelApp.Travel.Category, id: 1
+Abp.Domain.Entities.EntityNotFoundException: There is no such an entity. Entity type: TravelApp.Travel.Category, id: 1
+   at Abp.Dapper.Repositories.DapperRepositoryBase`2.Get(TPrimaryKey id) in D:\Github\aspnetboilerplate\src\Abp.Dapper\Dapper\Repositories\DapperRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 84
+   at Castle.Proxies.Invocations.DapperRepositoryBase`2_Get.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 68
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.DapperEfRepositoryBase`2Proxy.Get(Int32 id)
+   at Castle.Proxies.DapperEfRepositoryBase`2Proxy.GetAsync_callback(Int32 id)
+   at Castle.Proxies.Invocations.AbpDapperRepositoryBase`2_GetAsync.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 78
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.DapperEfRepositoryBase`2Proxy.GetAsync(Int32 id)
+   at TravelApp.Travel.CategoryAppService.FindById(Int32 id) in C:\Users\yannis\Downloads\TravelApp (1)\4.5.0\aspnet-core\src\TravelApp.Application\Travel\CategoryApplicationService.cs:line 201
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+INFO  2019-02-12 18:30:08,365 [17   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-02-12 18:30:08,366 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TravelApp.Travel.CategoryAppService.FindById (TravelApp.Application) in 1031.0114ms
+INFO  2019-02-12 18:30:08,366 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1653.0575ms 404 application/json; charset=utf-8
+INFO  2019-02-12 18:30:37,539 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Category/FindById?id=1  0
+INFO  2019-02-12 18:30:37,539 [17   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-02-12 18:30:37,539 [17   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-02-12 18:30:37,540 [17   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2019-02-12 18:30:37,641 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "FindById", controller = "Category"}. Executing action TravelApp.Travel.CategoryAppService.FindById (TravelApp.Application)
+INFO  2019-02-12 18:30:37,641 [6    ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-02-12 18:30:37,642 [6    ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-02-12 18:30:37,647 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method TravelApp.Travel.CategoryAppService.FindById (TravelApp.Application) with arguments (1) - Validation state: Valid
+INFO  2019-02-12 18:30:37,797 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method TravelApp.Travel.CategoryAppService.FindById (TravelApp.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 149.7389ms.
+INFO  2019-02-12 18:30:37,930 [6    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-02-12 18:30:37,933 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action TravelApp.Travel.CategoryAppService.FindById (TravelApp.Application) in 291.0677ms
+INFO  2019-02-12 18:30:37,933 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 393.6206ms 200 application/json; charset=utf-8
+DEBUG 2019-02-12 18:35:19,140 [2    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2019-02-12 18:35:19,142 [2    ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-02-12 18:35:19,143 [2    ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-02-12 18:35:19,144 [2    ] Abp.Modules.AbpModuleManager             - Shutting down completed.
