@@ -26,7 +26,7 @@ Configuration.Modules.AbpAutoMapper().Configurators.Add(configuration =>
     // ....
 
     // 只需要复制这一段
-CategoryMapper.CreateMappings(configuration);
+ProjectMapper.CreateMappings(configuration);
 
     // ....
 });
@@ -39,7 +39,7 @@ CategoryMapper.CreateMappings(configuration);
 中的 PreInitialize 方法中:
 
 ```
-Configuration.Authorization.Providers.Add<CategoryAuthorizationProvider>();
+Configuration.Authorization.Providers.Add<ProjectAuthorizationProvider>();
 
 ```
 
@@ -48,7 +48,7 @@ Configuration.Authorization.Providers.Add<CategoryAuthorizationProvider>();
 可以在```DbContext```中增加：
 
  ```
-public DbSet<Category>  Categorys { get; set; }
+public DbSet<Project>  Projects { get; set; }
 
  ```
 
@@ -57,7 +57,7 @@ public DbSet<Category>  Categorys { get; set; }
 ```
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new CategoryCfg());
+            modelBuilder.ApplyConfiguration(new ProjectCfg());
         }
 
 ```
@@ -69,12 +69,18 @@ public DbSet<Category>  Categorys { get; set; }
 
 ```
 
-<text name="CategoryName"  value="CategoryName"></text>
-<text name="ParentId"  value="ParentId"></text>
-<text name="Enable"  value="Enable"></text>
+<text name="Name"  value="Name"></text>
+<text name="CategoryId"  value="CategoryId"></text>
+<text name="Describe"  value="Describe"></text>
+<text name="Content"  value="Content"></text>
+<text name="Price"  value="Price"></text>
+<text name="Picture"  value="Picture"></text>
+<text name="StartDate"  value="StartDate"></text>
+<text name="State"  value="State"></text>
+<text name="IsRecommend"  value="IsRecommend"></text>
 
 
-<text name="Category" value="分类"></text><text name="QueryCategory"  value="查询分类"></text><text name="CreateCategory"  value="添加分类"></text><text name="EditCategory"  value="编辑分类"></text><text name="DeleteCategory"  value="删除分类"></text><text name="BatchDeleteCategory" value="批量删除分类"></text><text name="ExportCategory"  value="导出分类"></text>                             
+<text name="Project" value=""></text><text name="QueryProject"  value="查询"></text><text name="CreateProject"  value="添加"></text><text name="EditProject"  value="编辑"></text><text name="DeleteProject"  value="删除"></text><text name="BatchDeleteProject" value="批量删除"></text><text name="ExportProject"  value="导出"></text>                             
 
 ```
 

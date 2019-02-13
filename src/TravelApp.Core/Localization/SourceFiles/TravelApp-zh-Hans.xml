@@ -96,8 +96,18 @@
     <text name="DefaultPasswordIs">默认密码为：{0}</text>
     <text name="DeleteTenantConfirm">确认删除该租户？</text>
     <text name="EditTenant">编辑租户</text>
-    
-    
+
+    <text name="Projects">线路</text>
+
+    <text name="Project" value="线路"></text>
+    <text name="QueryProject"  value="查询"></text>
+    <text name="CreateProject"  value="添加"></text>
+    <text name="EditProject"  value="编辑"></text>
+    <text name="DeleteProject"  value="删除"></text>
+    <text name="BatchDeleteProject" value="批量删除"></text>
+    <text name="ExportProject"  value="导出"></text>
+
+
   </texts>
 </localizationDictionary>
 

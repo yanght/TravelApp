@@ -2,7 +2,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using TravelApp.Travel;
+using TravelApp.Travel.Categorys;
 
 namespace TravelApp.EntityMapper.Categorys
 {
@@ -16,7 +16,8 @@ namespace TravelApp.EntityMapper.Categorys
             
 			builder.Property(a => a.CategoryName).HasMaxLength(YoYoAbpefCoreConsts.EntityLengthNames.Length64);
 			builder.Property(a => a.ParentId).HasMaxLength(YoYoAbpefCoreConsts.EntityLengthNames.Length64);
-			builder.Property(a => a.Enable).HasMaxLength(YoYoAbpefCoreConsts.EntityLengthNames.Length64);
+			builder.Property(a => a.State).HasMaxLength(YoYoAbpefCoreConsts.EntityLengthNames.Length64);
+			builder.Property(a => a.Sort).HasMaxLength(YoYoAbpefCoreConsts.EntityLengthNames.Length64);
 
 
         }

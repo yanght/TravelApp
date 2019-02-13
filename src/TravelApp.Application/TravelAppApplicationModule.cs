@@ -2,6 +2,8 @@
 using Abp.Modules;
 using Abp.Reflection.Extensions;
 using TravelApp.Authorization;
+using TravelApp.Travel.Authorization;
+using TravelApp.Travel.Mapper;
 
 namespace TravelApp
 {
@@ -13,6 +15,7 @@ namespace TravelApp
         public override void PreInitialize()
         {
             Configuration.Authorization.Providers.Add<TravelAppAuthorizationProvider>();
+            Configuration.Authorization.Providers.Add<ProjectAuthorizationProvider>();
         }
 
         public override void Initialize()

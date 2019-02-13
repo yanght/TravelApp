@@ -24,4 +24,7 @@
   <ItemGroup>
     <ProjectReference Include="..\TravelApp.Core\TravelApp.Core.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EntityMapper\" />
+  </ItemGroup>
 </Project>

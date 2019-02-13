@@ -95,5 +95,7 @@
     <text name="Skins">Skins</text>
     <text name="Settings">Settings</text>
     <text name="Filter">Filter</text>
+
+    <text name="Projects">Projects</text>
   </texts>
 </localizationDictionary>
