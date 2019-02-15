@@ -12,7 +12,7 @@ using TravelApp.Authentication.JwtBearer;
 using TravelApp.Configuration;
 using TravelApp.Identity;
 using Abp.AspNetCore.SignalR.Hubs;
-
+using TravelApp.Web.Resources;
 
 namespace TravelApp.Web.Startup
 {
@@ -35,7 +35,7 @@ namespace TravelApp.Web.Startup
             IdentityRegistrar.Register(services);
             AuthConfigurer.Configure(services, _appConfiguration);
 
-            //services.AddScoped<IWebResourceManager, WebResourceManager>();
+            services.AddScoped<IWebResourceManager, WebResourceManager>();
 
             //services.AddSignalR();
 
