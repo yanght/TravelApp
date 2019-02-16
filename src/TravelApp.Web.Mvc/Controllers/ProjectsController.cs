@@ -30,7 +30,7 @@ namespace TravelApp.Web.Controllers
         // GET: /<controller>/
         public async Task<IActionResult> Index()
         {
-            var projects = (await _projectAppService.GetPaged(new Travel.Dtos.GetProjectsInput())).Items; // Paging not implemented yet
+            var projects = (await _projectAppService.GetPaged(new Travel.Dtos.GetProjectsInput())).Items;
             var model = new ProjectListViewModel()
             {
                 Projects = projects
