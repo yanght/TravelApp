@@ -4,6 +4,9 @@ using TravelApp.Authorization.Roles;
 using TravelApp.Authorization.Users;
 using TravelApp.MultiTenancy;
 using TravelApp.Travel;
+using TravelApp.Travel.Categorys;
+using TravelApp.Travel.Projects;
+using TravelApp.EntityMapper.Projects;
 
 namespace TravelApp.EntityFrameworkCore
 {
@@ -17,5 +20,6 @@ namespace TravelApp.EntityFrameworkCore
         }
 
         public virtual DbSet<Category> Categorys { get; set; }
+        public virtual DbSet<Project> Projects { get; set; }
     }
 }

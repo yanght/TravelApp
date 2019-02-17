@@ -1,0 +1,57 @@
+﻿@inject TravelApp.Timing.AppTimes AppTimes
+@{
+    ViewData["Title"] = "Index";
+}
+@section Scripts{
+    <script src="~/view-resources/Views/Project/index.js" asp-append-version="true"></script>
+}
+<div class="layui-row">
+    <form action="" method="post" class="layui-form layui-form-pane">
+        <div class="layui-form-item">
+            <label for="username" class="layui-form-label">
+                线路名称
+            </label>
+            <div class="layui-input-inline">
+                <input class="layui-input" placeholder="线路名称" name="Name" id="Name">
+            </div>
+            <label for="username" class="layui-form-label">
+                线路分类
+            </label>
+            <div class="layui-input-inline">
+                <select name="CategoryId" id="CategoryId">
+                    <option>支付方式</option>
+                    <option>支付宝</option>
+                    <option>微信</option>
+                    <option>货到付款</option>
+                </select>
+            </div>
+            <label for="username" class="layui-form-label">
+                线路状态
+            </label>
+            <div class="layui-input-inline">
+                <select name="State" id="State">
+                    <option value="1">正常</option>
+                    <option value="-1">已删除</option>
+                </select>
+            </div>
+            <label for="username" class="layui-form-label">
+                开始时间
+            </label>
+            <div class="layui-input-inline">
+                <input class="layui-input" placeholder="" name="start" id="start">
+            </div>
+            <label for="username" class="layui-form-label">
+                结束时间
+            </label>
+            <div class="layui-input-inline">
+                <input class="layui-input" placehol
+                       der="" name="end" id="end">
+            </div>
+            <button class="layui-btn" lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>
+        </div>
+    </form>
+</div>
+<table class="layui-table" id="projectList"></table>
+
+
+

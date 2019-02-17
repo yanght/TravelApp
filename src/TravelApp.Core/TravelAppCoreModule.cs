@@ -19,6 +19,8 @@ namespace TravelApp
         {
             Configuration.Auditing.IsEnabledForAnonymousUsers = true;
 
+            //todo 开发阶段禁用权限验证
+            Configuration.Authorization.IsEnabled = false;
             // Declare entity types
             Configuration.Modules.Zero().EntityTypes.Tenant = typeof(Tenant);
             Configuration.Modules.Zero().EntityTypes.Role = typeof(Role);
