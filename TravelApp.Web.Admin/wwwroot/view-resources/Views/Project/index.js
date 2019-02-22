@@ -1,6 +1,7 @@
 ﻿layui.use(['laydate', 'table'], function () {
     var laydate = layui.laydate;
     var table = layui.table;
+    var form = layui.form;
 
     var _projectService = abp.services.app.project;
 
@@ -14,21 +15,48 @@
         elem: '#end' //指定元素
     });
 
-    table.render({
+    var projectTab = table.render({
         elem: '#projectList'
         , url: '/project/ProjectList' //数据接口
         , page: true //开启分页
         , cols: [[ //表头
-            { field: 'name', title: '名称' }
+            { type: 'checkbox', fixed: 'left' }
+            , { field: 'name', title: '名称' }
             , { field: 'categoryId', title: '分类Id' }
             , { field: 'price', title: '价格' }
             , { field: 'startDate', title: '发团日期' }
             , { field: 'isRecommend', title: '是否推荐' }
             , { field: 'state', title: '状态' }
-            , { field: 'id', title: '操作', width: 200, templet: '#titleTpl' }
+            , { fixed: 'right', title: '操作', toolbar: '#optbar', width: 200 }
         ]]
     });
 
+    //监听工具条
+    table.on('tool(projectList)', function (obj) {
+        var data = obj.data;
+        if (obj.event === 'detail') {
+            layer.msg('ID：' + data.id + ' 的查看操作');
+        } else if (obj.event === 'del') {
+            layer.confirm('真的删除行么', function (index) {
+                obj.del();
+                layer.close(index);
+            });
+        } else if (obj.event === 'edit') {
+            //layer.alert('编辑行：<br>' + JSON.stringify(data))
+            x_admin_show("编辑线路", "/project/addproject?id=" + data.id);
+        }
+    });
+
+    form.on('submit(searchProject)', function (data) {
+        console.log(data.field) //当前容器的全部表单字段，名值对形式：{name: value}
+        projectTab.reload({
+            where: data.field
+            , page: {
+                curr: 1 //重新从第 1 页开始
+            }
+        });
+        return false; //阻止表单跳转。如果需要表单跳转，去掉这段即可。
+    })
 });
 
 /*用户-停用*/
@@ -62,6 +90,7 @@ function member_del(obj, id) {
         layer.msg('已删除!', { icon: 1, time: 1000 });
     });
 }
+
 function delAll(argument) {
 
     var data = tableCheck.getData();
