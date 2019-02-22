@@ -6,7 +6,7 @@
     <script src="~/view-resources/Views/Project/index.js" asp-append-version="true"></script>
 }
 <div class="layui-row">
-    <form action="" method="post" class="layui-form layui-form-pane">
+    <form class="layui-form layui-form-pane">
         <div class="layui-form-item">
             <label for="username" class="layui-form-label">
                 线路名称
@@ -38,20 +38,26 @@
                 开始时间
             </label>
             <div class="layui-input-inline">
-                <input class="layui-input" placeholder="" name="start" id="start">
+                <input class="layui-input" placeholder="" name="StartTime" id="StartTime">
             </div>
             <label for="username" class="layui-form-label">
                 结束时间
             </label>
             <div class="layui-input-inline">
                 <input class="layui-input" placehol
-                       der="" name="end" id="end">
+                       der="" name="EndTime" id="EndTime">
             </div>
-            <button class="layui-btn" lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>
+            <button class="layui-btn" lay-submit lay-filter="searchProject"><i class="layui-icon">&#xe615;</i></button>
         </div>
     </form>
 </div>
-<table class="layui-table" id="projectList"></table>
+<table class="layui-table" id="projectList" lay-filter="projectList"></table>
+
+<script type="text/html" id="optbar">
+    <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
 
 
 
