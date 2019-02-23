@@ -13,6 +13,9 @@ using TravelApp.Configuration;
 using TravelApp.Identity;
 using Abp.AspNetCore.SignalR.Hubs;
 using TravelApp.Web.Resources;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
+using Microsoft.AspNetCore.Http;
 
 namespace TravelApp.Web.Startup
 {
@@ -31,6 +34,14 @@ namespace TravelApp.Web.Startup
             services.AddMvc(
                 options => options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute())
             );
+
+            #region CORS
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin",
+                                builder => builder.WithOrigins("http://localhost:62992").AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
+            });
+            #endregion
 
             IdentityRegistrar.Register(services);
             AuthConfigurer.Configure(services, _appConfiguration);
@@ -71,6 +82,8 @@ namespace TravelApp.Web.Startup
             //{
             //    routes.MapHub<AbpCommonHub>("/signalr");
             //});
+
+            app.UseCors("AllowSpecificOrigin");
 
             app.UseMvc(routes =>
             {

@@ -60,14 +60,15 @@ namespace TravelApp.Travel
 
             var query = _entityRepository.GetAll();
             // TODO:根据传入的参数添加过滤条件
+
             if (!string.IsNullOrEmpty(input.Name))
-                query.Where(m => m.Name.Contains(input.Name));
+                query = query.Where(m => m.Name.Contains(input.Name));
             if (input.CategoryId > 0)
-                query.Where(m => m.CategoryId == input.CategoryId);
+                query = query.Where(m => m.CategoryId == input.CategoryId);
             if (input.IsRecommend)
-                query.Where(m => m.IsRecommend == input.IsRecommend);
+                query = query.Where(m => m.IsRecommend == input.IsRecommend);
             if (input.State != 0)
-                query.Where(m => m.State == input.State);
+                query = query.Where(m => m.State == input.State);
 
             var count = await query.CountAsync();
 
@@ -212,7 +213,6 @@ namespace TravelApp.Travel
         //	await FillRoleNames(userListDtos);
         //	return _userListExcelExporter.ExportToFile(userListDtos);
         //}
-
     }
 }
 

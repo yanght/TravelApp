@@ -2024,7 +2024,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\TravelApp.Web.Core\TravelApp.Web.Core.csproj" />
+    <ProjectReference Include="..\TravelApp.Web.Core\TravelApp.Web.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelApp.Web.Mvc", "src\Tr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelApp.EntityFrameworkCore", "src\TravelApp.EntityFrameworkCore\TravelApp.EntityFrameworkCore.csproj", "{E0580562-F8F2-4EBB-B07A-ABFC6F2C314F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelApp.Web.Admin", "TravelApp.Web.Admin\TravelApp.Web.Admin.csproj", "{D28D6789-44A4-4D45-908A-DD7657C4C056}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelApp.Web.Admin", "src\TravelApp.Web.Admin\TravelApp.Web.Admin.csproj", "{D28D6789-44A4-4D45-908A-DD7657C4C056}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,18 +1,19 @@
-﻿layui.use(['laydate', 'table'], function () {
+﻿layui.use(['laydate', 'table', 'treeSelect'], function () {
     var laydate = layui.laydate;
     var table = layui.table;
     var form = layui.form;
+    var treeSelect = layui.treeSelect;
 
     var _projectService = abp.services.app.project;
 
     //执行一个laydate实例
     laydate.render({
-        elem: '#start' //指定元素
+        elem: '#StartTime' //指定元素
     });
 
     //执行一个laydate实例
     laydate.render({
-        elem: '#end' //指定元素
+        elem: '#EndTime' //指定元素
     });
 
     var projectTab = table.render({
@@ -43,7 +44,7 @@
             });
         } else if (obj.event === 'edit') {
             //layer.alert('编辑行：<br>' + JSON.stringify(data))
-            x_admin_show("编辑线路", "/project/addproject?id=" + data.id);
+            x_admin_show("编辑线路", "/project/editproject?projectId=" + data.id);
         }
     });
 
@@ -57,6 +58,37 @@
         });
         return false; //阻止表单跳转。如果需要表单跳转，去掉这段即可。
     })
+
+    treeSelect.render({
+        // 选择器
+        elem: '#CategoryId',
+        // 数据
+        data: '/category/GetCategoryTree',
+        // 异步加载方式：get/post，默认get
+        type: 'get',
+        // 占位符
+        placeholder: '请选择分类',
+        // 是否开启搜索功能：true/false，默认false
+        search: true,
+        // 点击回调
+        click: function (d) {
+            console.log(d);
+        },
+        // 加载完成后的回调函数
+        success: function (d) {
+            console.log(d);
+            //                选中节点，根据id筛选
+            //                treeSelect.checkNode('tree', 3);
+ 
+            //                获取zTree对象，可以调用zTree方法
+            //                var treeObj = treeSelect.zTree('tree');
+            //                console.log(treeObj);
+
+            //                刷新树结构
+            //                treeSelect.refresh();
+        }
+    });
+
 });
 
 /*用户-停用*/
