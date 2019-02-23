@@ -1,6 +1,7 @@
-﻿layui.use(['form', 'layer', 'upload', 'treeSelect', 'laydate'], function () {
+﻿layui.use(['form', 'jquery', 'layer', 'upload', 'treeSelect', 'laydate'], function () {
     var laydate = layui.laydate;
     var form = layui.form
+        , $ = layui.jquery
         , layer = layui.layer
         , upload = layui.upload
         , treeSelect = layui.treeSelect;
@@ -49,11 +50,12 @@
         }
         , done: function (res) {
             //如果上传失败
-            if (res.code > 0) {
-                return layer.msg('上传失败');
+            if (!res.result || !res.result.isSuccess) {
+                return layer.msg(res.result.msg);
             }
             //上传成功
-            $("#Picture").val(res.filePath);
+            $("#Picture").val(res.result.data[0]);
+            $("#demoText").remove();
         }
         , error: function () {
             //演示失败状态，并实现重传
