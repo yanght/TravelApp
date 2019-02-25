@@ -64,7 +64,7 @@ namespace TravelApp.Web.Admin.Controllers
                 SkipCount = (requestModel.page - 1) * requestModel.limit,
                 Sorting = ""
             };
-            var result = (await _projectAppService.GetPaged(input));
+            var result = (await _projectAppService.GetProjectList(input));
             return Json(new TableJsonResult() { code = 0, count = result.TotalCount, data = result.Items, msg = "" });
         }
 

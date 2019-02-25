@@ -78,5 +78,7 @@ namespace TravelApp.Travel
         /// <returns></returns>
 		//Task<FileDto> GetToExcel();
 
+        Task<PagedResultDto<ProjectListDto>>GetProjectList(GetProjectsInput input);
+
     }
 }
