@@ -76,16 +76,7 @@
         },
         // 加载完成后的回调函数
         success: function (d) {
-            console.log(d);
-            //                选中节点，根据id筛选
-            //                treeSelect.checkNode('tree', 3);
- 
-            //                获取zTree对象，可以调用zTree方法
-            //                var treeObj = treeSelect.zTree('tree');
-            //                console.log(treeObj);
-
-            //                刷新树结构
-            //                treeSelect.refresh();
+           
         }
     });
 
