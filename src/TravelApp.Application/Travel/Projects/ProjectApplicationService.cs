@@ -23,6 +23,9 @@ using TravelApp.Travel.Dtos;
 using TravelApp.Travel.DomainService;
 using TravelApp.Travel.Authorization;
 using TravelApp.Travel.Projects;
+using Abp.Dapper.Repositories;
+using System.Data.SqlClient;
+using System.Data.Common;
 
 namespace TravelApp.Travel
 {
@@ -35,6 +38,9 @@ namespace TravelApp.Travel
         private readonly IRepository<Project, int> _entityRepository;
 
         private readonly IProjectManager _entityManager;
+
+        private readonly IDapperRepository<Project> _projectDapperRepository;
+
 
         /// <summary>
         /// 构造函数 
@@ -201,6 +207,47 @@ namespace TravelApp.Travel
             await _entityRepository.DeleteAsync(s => input.Contains(s.Id));
         }
 
+        public async Task<PagedResultDto<ProjectListDto>> GetProjectList(GetProjectsInput input)
+        {
+            PagedResultDto<ProjectListDto> rtn = new PagedResultDto<ProjectListDto>();
+            string sql = "select project.*,category.categoryName from project left join category on project.categoryId=category.id where 1=1 ";
+            string whereSql = string.Empty;
+            if (input.CategoryId!=0)
+            {
+                whereSql = " and project.categoryId=@categoryId";
+            }
+            if(!string.IsNullOrEmpty(input.Name))
+            {
+                whereSql += " and project.Name like %@Name%";
+            }
+            if(input.State!=0)
+            {
+                whereSql += " and project.state=@State";
+            }
+            sql += whereSql;
+            string countsql = $"select count(1) from project where 1=1 "+whereSql;
+
+            string pagesql = @"select top @pageSize o.* from (select row_number() over(order by orderColumn) as rownumber,* from("+ sql + ") as o where rownumber>@SkipCount;";
+
+            List<ProjectListDto> projectLit= (await _projectDapperRepository.QueryAsync<ProjectListDto>(pagesql, new
+            {
+                SkipCount = input.SkipCount,
+                PageSize = input.MaxResultCount,
+                categoryId = input.CategoryId,
+                Name = input.Name,
+                State = input.State
+            })).ToList();
+
+            int totalCount = await _projectDapperRepository.ExecuteAsync(sql, new {
+                categoryId = input.CategoryId,
+                Name = input.Name,
+                State = input.State
+            });
+
+            rtn.Items = projectLit;
+            rtn.TotalCount = totalCount;
+            return rtn;
+        }
 
         /// <summary>
         /// 导出Project为excel表,等待开发。
