@@ -2,6 +2,7 @@
 using Abp.Authorization;
 using Abp.Authorization.Roles;
 using TravelApp.Authorization.Roles;
+using DapperExtensions.Mapper;
 
 namespace TravelApp.Roles.Dto
 {

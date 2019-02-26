@@ -19,7 +19,7 @@ namespace TravelApp.EntityFrameworkCore
         {
         }
 
-        public virtual DbSet<Category> Categorys { get; set; }
-        public virtual DbSet<Project> Projects { get; set; }
+        public virtual DbSet<Category> Category { get; set; }
+        public virtual DbSet<Project> Project { get; set; }
     }
 }

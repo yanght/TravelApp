@@ -10,7 +10,6 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
 using Abp.UI;
-using Abp.AutoMapper;
 using Abp.Extensions;
 using Abp.Authorization;
 using Abp.Domain.Repositories;
@@ -26,6 +25,8 @@ using TravelApp.Travel.Projects;
 using Abp.Dapper.Repositories;
 using System.Data.SqlClient;
 using System.Data.Common;
+using TravelApp.Application;
+using Abp.AutoMapper;
 
 namespace TravelApp.Travel
 {
@@ -48,10 +49,12 @@ namespace TravelApp.Travel
         public ProjectAppService(
         IRepository<Project, int> entityRepository
         , IProjectManager entityManager
+            , IDapperRepository<Project> projectDapperRepository
         )
         {
             _entityRepository = entityRepository;
             _entityManager = entityManager;
+            _projectDapperRepository = projectDapperRepository;
         }
 
 
@@ -84,7 +87,7 @@ namespace TravelApp.Travel
                     .ToListAsync();
 
             // var entityListDtos = ObjectMapper.Map<List<ProjectListDto>>(entityList);
-            var entityListDtos = entityList.MapTo<List<ProjectListDto>>();
+            var entityListDtos = entityList.MapToList<Project, ProjectListDto>().ToList();
 
             return new PagedResultDto<ProjectListDto>(count, entityListDtos);
         }
@@ -98,7 +101,7 @@ namespace TravelApp.Travel
         {
             var entity = await _entityRepository.GetAsync(input.Id);
 
-            return entity.MapTo<ProjectListDto>();
+            return entity.MapTo<Project, ProjectListDto>();
         }
 
         /// <summary>
@@ -116,7 +119,7 @@ namespace TravelApp.Travel
             {
                 var entity = await _entityRepository.GetAsync(input.Id.Value);
 
-                editDto = entity.MapTo<ProjectEditDto>();
+                editDto = entity.MapTo<Project, ProjectEditDto>();
 
                 //projectEditDto = ObjectMapper.Map<List<projectEditDto>>(entity);
             }
@@ -159,11 +162,11 @@ namespace TravelApp.Travel
             //TODO:新增前的逻辑判断，是否允许新增
 
             // var entity = ObjectMapper.Map <Project>(input);
-            var entity = input.MapTo<Project>();
+            var entity = input.MapTo<ProjectEditDto, Project>();
 
 
             entity = await _entityRepository.InsertAsync(entity);
-            return entity.MapTo<ProjectEditDto>();
+            return entity.MapTo<Project, ProjectEditDto>();
         }
 
         /// <summary>
@@ -210,40 +213,40 @@ namespace TravelApp.Travel
         public async Task<PagedResultDto<ProjectListDto>> GetProjectList(GetProjectsInput input)
         {
             PagedResultDto<ProjectListDto> rtn = new PagedResultDto<ProjectListDto>();
+            string pagesql = $"select top {input.MaxResultCount} * from(select row_number() over(order by id asc) as rownumber, * from({"{0}"}) as a) temp_row where rownumber > {input.SkipCount}";
+
             string sql = "select project.*,category.categoryName from project left join category on project.categoryId=category.id where 1=1 ";
             string whereSql = string.Empty;
-            if (input.CategoryId!=0)
+
+            var predicate = PredicateBuilder.True<Project>();
+            if (input.CategoryId != 0)
             {
-                whereSql = " and project.categoryId=@categoryId";
+                whereSql = " and project.CategoryId=@CategoryId";
+                predicate = predicate.And(m => m.CategoryId == input.CategoryId);
             }
-            if(!string.IsNullOrEmpty(input.Name))
+            if (!string.IsNullOrEmpty(input.Name))
             {
                 whereSql += " and project.Name like %@Name%";
+                predicate = predicate.And(m => m.Name == input.Name);
             }
-            if(input.State!=0)
+            if (input.State != 0)
             {
-                whereSql += " and project.state=@State";
+                whereSql += " and project.State=@State";
+                predicate = predicate.And(m => m.State == input.State);
             }
             sql += whereSql;
-            string countsql = $"select count(1) from project where 1=1 "+whereSql;
 
-            string pagesql = @"select top @pageSize o.* from (select row_number() over(order by orderColumn) as rownumber,* from("+ sql + ") as o where rownumber>@SkipCount;";
+            string countsql = $"select count(1) from project where 1=1 {whereSql}";
+            pagesql = string.Format(pagesql, sql);
 
-            List<ProjectListDto> projectLit= (await _projectDapperRepository.QueryAsync<ProjectListDto>(pagesql, new
+            int totalCount = _entityRepository.Count(predicate);
+
+            List<ProjectListDto> projectLit = (await _projectDapperRepository.QueryAsync<ProjectListDto>(pagesql, new
             {
-                SkipCount = input.SkipCount,
-                PageSize = input.MaxResultCount,
-                categoryId = input.CategoryId,
+                CategoryId = input.CategoryId,
                 Name = input.Name,
                 State = input.State
             })).ToList();
-
-            int totalCount = await _projectDapperRepository.ExecuteAsync(sql, new {
-                categoryId = input.CategoryId,
-                Name = input.Name,
-                State = input.State
-            });
-
             rtn.Items = projectLit;
             rtn.TotalCount = totalCount;
             return rtn;

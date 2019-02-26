@@ -23,7 +23,7 @@
         , cols: [[ //表头
             { type: 'checkbox', fixed: 'left' }
             , { field: 'name', title: '名称' }
-            , { field: 'categoryId', title: '分类Id' }
+            , { field: 'categoryName', title: '所属分类' }
             , { field: 'price', title: '价格' }
             , { field: 'startDate', title: '发团日期' }
             , { field: 'isRecommend', title: '是否推荐' }
@@ -76,7 +76,7 @@
         },
         // 加载完成后的回调函数
         success: function (d) {
-           
+
         }
     });
 
