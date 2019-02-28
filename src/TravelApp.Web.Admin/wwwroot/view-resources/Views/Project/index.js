@@ -18,7 +18,8 @@
 
     var projectTab = table.render({
         elem: '#projectList'
-        , url: '/project/ProjectList' //数据接口
+        //, url: '/project/ProjectList' //数据接口 
+        , url: '/api/services/app/Project/GetProjectList' //数据接口
         , page: true //开启分页
         , cols: [[ //表头
             { type: 'checkbox', fixed: 'left' }
@@ -29,7 +30,17 @@
             , { field: 'isRecommend', title: '是否推荐' }
             , { field: 'state', title: '状态' }
             , { fixed: 'right', title: '操作', toolbar: '#optbar', width: 200 }
-        ]]
+        ]], response: {
+            statusCode: 0 //重新规定成功的状态码为 200，table 组件默认为 0
+        }
+        , parseData: function (res) { //将原始数据解析成 table 组件所规定的数据
+            return {
+                "code": res.success ? 0 : -1, //解析接口状态
+                "msg": res.error, //解析提示文本
+                "count": res.result.totalCount, //解析数据长度
+                "data": res.result.items //解析数据列表
+            };
+        }
     });
 
     //监听工具条
@@ -39,8 +50,12 @@
             layer.msg('ID：' + data.id + ' 的查看操作');
         } else if (obj.event === 'del') {
             layer.confirm('真的删除行么', function (index) {
-                obj.del();
-                layer.close(index);
+                _projectService.delete({ id: data.id }).done(function () {
+                    obj.del();
+                    layer.close(index);
+                }).always(function () {
+
+                });
             });
         } else if (obj.event === 'edit') {
             //layer.alert('编辑行：<br>' + JSON.stringify(data))

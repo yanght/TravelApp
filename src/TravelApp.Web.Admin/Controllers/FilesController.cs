@@ -23,9 +23,7 @@ namespace TravelApp.Web.Admin.Controllers
         {
             this.hostingEnv = env;
         }
-
-        [HttpPost]
-        public JsonResult Post()
+        public JsonResult Upload()
         {
             var files = Request.Form.Files;
             long size = files.Sum(f => f.Length);

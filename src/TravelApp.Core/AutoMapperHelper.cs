@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using AutoMapper;
 
-namespace TravelApp.Application
+namespace TravelApp.Core
 {
     /// <summary>
     /// Auto mapper helper.

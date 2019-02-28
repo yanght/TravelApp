@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Abp.AutoMapper;
+using Abp.Runtime.Validation;
 using Abp.Web.Models;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using TravelApp.Controllers;
+using TravelApp.Core;
 using TravelApp.Travel;
 using TravelApp.Travel.Categorys;
 using TravelApp.Travel.Dtos;
@@ -17,6 +19,7 @@ using TravelApp.Web.Admin.Models.Project;
 
 namespace TravelApp.Web.Admin.Controllers
 {
+    [DisableValidation]
     public class ProjectController : TravelAppControllerBase
     {
         private readonly IProjectAppService _projectAppService;
@@ -38,46 +41,52 @@ namespace TravelApp.Web.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> EditProject(int projectId)
         {
-            var project = await _projectAppService.GetById(new Abp.Application.Services.Dto.EntityDto<int>() { Id = projectId });
-            var category = await _categoryAppService.GetById(new Abp.Application.Services.Dto.EntityDto<int>() { Id = project.CategoryId });
+            var projectForEdit = await _projectAppService.GetForEdit(new Abp.Application.Services.Dto.NullableIdDto<int>() { Id = projectId });
+            var category = await _categoryAppService.GetById(new Abp.Application.Services.Dto.EntityDto<int>() { Id = projectForEdit.Project.CategoryId });
 
-            return View(new EditProjectViewModel() { Project = project, Category = category });
+            return View(new EditProjectViewModel() { Project = projectForEdit.Project, Category = category });
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="requestModel"></param>
-        /// <returns></returns>
-        [DontWrapResult]
-        public async Task<JsonResult> ProjectList(GetProjectListRequestModel requestModel)
-        {
-            var input = new GetProjectsInput()
-            {
-                CategoryId = requestModel.CategoryId,
-                EndTime = requestModel.EndTime,
-                IsRecommend = requestModel.IsRecommend,
-                Name = requestModel.Name,
-                StartTime = requestModel.StartTime,
-                State = requestModel.State,
-                MaxResultCount = requestModel.limit,
-                SkipCount = (requestModel.page - 1) * requestModel.limit,
-                Sorting = ""
-            };
-            var result = (await _projectAppService.GetProjectList(input));
-            return Json(new TableJsonResult() { code = 0, count = result.TotalCount, data = result.Items, msg = "" });
-        }
+        ///// <summary>
+        ///// 线路列表
+        ///// </summary>
+        ///// <param name="requestModel"></param>
+        ///// <returns></returns>
+        //[DontWrapResult]
+        //public async Task<JsonResult> ProjectList(GetProjectListRequestModel requestModel)
+        //{            
+        //       var input = new GetProjectsInput()
+        //    {
+        //        CategoryId = requestModel.CategoryId,
+        //        EndTime = requestModel.EndTime,
+        //        IsRecommend = requestModel.IsRecommend,
+        //        Name = requestModel.Name,
+        //        StartTime = requestModel.StartTime,
+        //        State = requestModel.State,
+        //        MaxResultCount = requestModel.limit,
+        //        SkipCount = (requestModel.page - 1) * requestModel.limit,
+        //        Sorting = ""
+        //    };
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="requestModel"></param>
-        /// <returns></returns>
-        [HttpPost]
-        public async Task<JsonResult> EditProject(CreateOrUpdateProjectInput requestModel)
-        {
-            await _projectAppService.CreateOrUpdate(requestModel);
-            return Json(true);
-        }
+        //    input = requestModel.MapTo<GetProjectListRequestModel, GetProjectsInput>();
+        //    input.SkipCount = (requestModel.page - 1) * requestModel.limit;
+        //    input.MaxResultCount = requestModel.limit;
+
+        //    var result = (await _projectAppService.GetProjectList(input));
+        //    return Json(new TableJsonResult() { code = 0, count = result.TotalCount, data = result.Items, msg = "" });
+        //}
+
+        ///// <summary>
+        ///// 编辑线路
+        ///// </summary>
+        ///// <param name="requestModel"></param>
+        ///// <returns></returns>
+        //[HttpPost]
+        //public async Task<JsonResult> EditProject([FromBody]EditProjectRequestModel requestModel)
+        //{
+        //    var projectEditDto = requestModel.MapTo<EditProjectRequestModel, ProjectEditDto>();
+        //    await _projectAppService.CreateOrUpdate(new CreateOrUpdateProjectInput() { Project = projectEditDto });
+        //    return Json(new AjaxJsonResult(true));
+        //}
     }
 }

@@ -25,8 +25,9 @@ using TravelApp.Travel.Projects;
 using Abp.Dapper.Repositories;
 using System.Data.SqlClient;
 using System.Data.Common;
-using TravelApp.Application;
 using Abp.AutoMapper;
+using TravelApp.Core;
+using Abp.Runtime.Validation;
 
 namespace TravelApp.Travel
 {
@@ -34,6 +35,7 @@ namespace TravelApp.Travel
     /// Project应用层服务的接口实现方法  
     ///</summary>
     [AbpAuthorize]
+    [DisableValidation]
     public class ProjectAppService : TravelAppAppServiceBase, IProjectAppService
     {
         private readonly IRepository<Project, int> _entityRepository;
@@ -226,8 +228,8 @@ namespace TravelApp.Travel
             }
             if (!string.IsNullOrEmpty(input.Name))
             {
-                whereSql += " and project.Name like %@Name%";
-                predicate = predicate.And(m => m.Name == input.Name);
+                whereSql += " and project.Name like @Name";
+                predicate = predicate.And(m => m.Name.Contains(input.Name));
             }
             if (input.State != 0)
             {
@@ -244,7 +246,7 @@ namespace TravelApp.Travel
             List<ProjectListDto> projectLit = (await _projectDapperRepository.QueryAsync<ProjectListDto>(pagesql, new
             {
                 CategoryId = input.CategoryId,
-                Name = input.Name,
+                Name = $"%{input.Name}%",
                 State = input.State
             })).ToList();
             rtn.Items = projectLit;

@@ -2021,6 +2021,7 @@
     <PackageReference Include="Abp.HangFire" Version="4.2.0" />
     <PackageReference Include="Abp.RedisCache" Version="4.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="UEditor.Core" Version="1.0.6" />
   </ItemGroup>
 
   <ItemGroup>

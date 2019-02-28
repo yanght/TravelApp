@@ -16,6 +16,8 @@ using TravelApp.Web.Resources;
 using Microsoft.Extensions.FileProviders;
 using System.IO;
 using Microsoft.AspNetCore.Http;
+using Abp;
+using UEditor.Core;
 
 namespace TravelApp.Web.Startup
 {
@@ -30,6 +32,7 @@ namespace TravelApp.Web.Startup
 
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
+            services.AddUEditorService();
             // MVC
             services.AddMvc(
                 options => options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute())
@@ -72,7 +75,16 @@ namespace TravelApp.Web.Startup
                 app.UseExceptionHandler("/Error");
             }
 
-            app.UseStaticFiles();
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+       Path.Combine(Directory.GetCurrentDirectory(), "upload")),
+                RequestPath = "/upload",
+                OnPrepareResponse = ctx =>
+                {
+                    ctx.Context.Response.Headers.Append("Cache-Control", "public,max-age=36000");
+                }
+            });
 
             //app.UseAuthentication();
 

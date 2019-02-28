@@ -9,7 +9,7 @@ namespace TravelApp.Web.Admin.Models.Project
 {
     public class EditProjectViewModel
     {
-        public ProjectListDto Project { get; set; }
+        public ProjectEditDto Project { get; set; }
         public CategoryListDto Category { get; set; }
     }
 }
