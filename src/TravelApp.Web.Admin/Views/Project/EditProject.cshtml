@@ -38,6 +38,21 @@
             <div class="layui-input-inline">
                 <input type="text" id="StartDate" name="StartDate" required="" lay-verify="required" class="layui-input" value="@Model.Project.StartDate">
             </div>
+
+        </div>
+        <div class="layui-form-item">
+            <label for="Name" class="layui-form-label">
+                是否推荐
+            </label>
+            <div class="layui-input-inline">
+                <input type="checkbox" name="IsRecommend" value="true" title="推荐" @(Model.Project.IsRecommend ? "checked=checked" : "")>
+            </div>
+            <label for="Name" class="layui-form-label">
+                立即发布
+            </label>
+            <div class="layui-input-inline">
+                <input type="checkbox" name="State" value="1" title="发布" @(Model.Project.State == 1 ? "checked=checked" : "")>
+            </div>
         </div>
         <div class="layui-form-item layui-form-text">
             <label for="Describe" class="layui-form-label">

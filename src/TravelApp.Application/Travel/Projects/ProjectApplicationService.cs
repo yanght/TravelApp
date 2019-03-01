@@ -236,6 +236,16 @@ namespace TravelApp.Travel
                 whereSql += " and project.State=@State";
                 predicate = predicate.And(m => m.State == input.State);
             }
+            if (input.StartTime != null)
+            {
+                whereSql += " and project.CreateTime>=@StartTime";
+                predicate = predicate.And(m => m.CreateTime >= input.StartTime);
+            }
+            if (input.EndTime != null)
+            {
+                whereSql += " and project.CreateTime<=@EndTime";
+                predicate = predicate.And(m => m.CreateTime <= input.EndTime);
+            }
             sql += whereSql;
 
             string countsql = $"select count(1) from project where 1=1 {whereSql}";
@@ -247,7 +257,9 @@ namespace TravelApp.Travel
             {
                 CategoryId = input.CategoryId,
                 Name = $"%{input.Name}%",
-                State = input.State
+                State = input.State,
+                StartTime = input.StartTime,
+                EndTime = input.EndTime
             })).ToList();
             rtn.Items = projectLit;
             rtn.TotalCount = totalCount;

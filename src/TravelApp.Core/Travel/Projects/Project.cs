@@ -17,5 +17,6 @@ namespace TravelApp.Travel.Projects
         public virtual string StartDate { get; set; }
         public virtual int State { get; set; }
         public virtual bool IsRecommend { get; set; }
+        public virtual DateTime CreateTime { get; set; }
     }
 }

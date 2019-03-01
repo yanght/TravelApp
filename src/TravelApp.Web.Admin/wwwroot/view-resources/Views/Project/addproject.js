@@ -21,11 +21,11 @@
         search: true,
         // 点击回调
         click: function (d) {
-            console.log(d);
+            //console.log(d);
         },
         // 加载完成后的回调函数
         success: function (d) {
-            console.log(d);
+           // console.log(d);
             //                选中节点，根据id筛选
             //                treeSelect.checkNode('tree', 3);
             var id = $("#CategoryId").val();
@@ -81,33 +81,6 @@
 
     //监听提交
     form.on('submit(add)', function (data) {
-        console.log(data.field);
-        //$.ajax({
-        //    type: 'POST',
-        //    url: "/project/editproject",
-        //    dataType: 'json',
-        //    contentType: 'application/json',
-        //    data: JSON.stringify(data.field),
-        //    success: function (resp) { // 返回的RequestResult的json对象
-        //        if (resp.success && resp.result.code == 0) {
-        //            //发异步，把数据提交给php
-        //            layer.alert("编辑成功", { icon: 6 }, function () {
-        //                window.parent.location.reload();
-        //                // 获得frame索引
-        //                var index = parent.layer.getFrameIndex(window.name);
-        //                //关闭当前frame
-        //                parent.layer.close(index);
-        //            });
-        //        } else {
-        //            if (!resp.success) {
-        //                layer.alert(resp.error);
-        //            } else {
-        //                layer.alert(resp.result.errorMsg);
-        //            }
-        //        }
-        //    }
-        //});
-
         _projectService.createOrUpdate({ project: data.field }).done(function () {
             window.parent.location.reload();
             // 获得frame索引

@@ -15,6 +15,7 @@ namespace TravelApp.Travel.Dtos
         public DateTime? StartTime { get; set; }
         public DateTime? EndTime { get; set; }
 
+
         /// <summary>
         /// 正常化排序使用
         /// </summary>

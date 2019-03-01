@@ -20,5 +20,6 @@ namespace TravelApp.Travel.Dtos
 		public string StartDate { get; set; }
 		public int State { get; set; }
 		public bool IsRecommend { get; set; }
+        public virtual DateTime CreateTime { get; set; }
     }
 }
