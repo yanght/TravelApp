@@ -27,8 +27,17 @@
             , { field: 'categoryName', title: '所属分类' }
             , { field: 'price', title: '价格' }
             , { field: 'startDate', title: '发团日期' }
-            , { field: 'isRecommend', title: '是否推荐' }
-            , { field: 'state', title: '状态' }
+            , {
+                field: 'isRecommend', title: '是否推荐', templet: function (res) {
+                    return res.isRecommend ? "是" : "否"
+                }
+            }
+            , {
+                field: 'state', title: '状态', templet: function (res) {
+                    if (res.state == 0) return "未审核";
+                    if (res.state == 1) return "已审核";
+                }
+            }
             , { fixed: 'right', title: '操作', toolbar: '#optbar', width: 200 }
         ]], response: {
             statusCode: 0 //重新规定成功的状态码为 200，table 组件默认为 0

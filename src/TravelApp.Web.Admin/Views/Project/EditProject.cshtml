@@ -36,7 +36,7 @@
                 <span class="x-red">*</span>发团日期
             </label>
             <div class="layui-input-inline">
-                <input type="text" id="StartDate" name="StartDate" required="" lay-verify="required" class="layui-input" value="@Model.Project.StartDate">
+                <input type="text" id="StartDate" name="StartDate" required="" lay-verify="required" class="layui-input" value="@(string.IsNullOrEmpty(Model.Project.StartDate)?"天天发团，请提前报名!":Model.Project.StartDate)">
             </div>
 
         </div>
