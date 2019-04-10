@@ -2616,4 +2616,8 @@
     </Content>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Trip\" />
+  </ItemGroup>
+
 </Project>

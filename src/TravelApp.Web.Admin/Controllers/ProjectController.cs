@@ -11,6 +11,7 @@ using TravelApp.Controllers;
 using TravelApp.Core;
 using TravelApp.Travel;
 using TravelApp.Travel.Categorys;
+using TravelApp.Travel.Categorys.Dtos;
 using TravelApp.Travel.Dtos;
 using TravelApp.Web.Admin.Models;
 using TravelApp.Web.Admin.Models.Project;
@@ -39,11 +40,14 @@ namespace TravelApp.Web.Admin.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> EditProject(int projectId)
+        public async Task<IActionResult> EditProject(int? projectId)
         {
+            var category = new CategoryListDto();
             var projectForEdit = await _projectAppService.GetForEdit(new Abp.Application.Services.Dto.NullableIdDto<int>() { Id = projectId });
-            var category = await _categoryAppService.GetById(new Abp.Application.Services.Dto.EntityDto<int>() { Id = projectForEdit.Project.CategoryId });
-
+            if (projectForEdit.Project.Id.HasValue)
+            {
+                category = await _categoryAppService.GetById(new Abp.Application.Services.Dto.EntityDto<int>() { Id = projectForEdit.Project.CategoryId });
+            }
             return View(new EditProjectViewModel() { Project = projectForEdit.Project, Category = category });
         }
 

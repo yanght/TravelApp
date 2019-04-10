@@ -28,6 +28,8 @@ using System.Data.Common;
 using Abp.AutoMapper;
 using TravelApp.Core;
 using Abp.Runtime.Validation;
+using TravelApp.Travel.Projects.Dtos;
+using TravelApp.Users.Dto;
 
 namespace TravelApp.Travel
 {
@@ -182,7 +184,6 @@ namespace TravelApp.Travel
             var entity = await _entityRepository.GetAsync(input.Id.Value);
             input.MapTo(entity);
 
-            // ObjectMapper.Map(input, entity);
             await _entityRepository.UpdateAsync(entity);
         }
 
@@ -264,6 +265,20 @@ namespace TravelApp.Travel
             rtn.Items = projectLit;
             rtn.TotalCount = totalCount;
             return rtn;
+        }
+
+        public async Task ChangeProjectRecommendState(ChangeProjectRecommendStateDto input)
+        {
+            var entity = await _entityRepository.GetAsync(input.Id.Value);
+            entity.IsRecommend = input.State == 1 ? true : false;
+            await _entityRepository.UpdateAsync(entity);
+        }
+
+        public async Task ChangeProjectAuditState(ChangeProjectRecommendStateDto input)
+        {
+            var entity = await _entityRepository.GetAsync(input.Id.Value);
+            entity.State = input.State;
+            await _entityRepository.UpdateAsync(entity);
         }
 
         /// <summary>

@@ -20,6 +20,7 @@ using Abp.Application.Services.Dto;
 
 using TravelApp.Travel.Dtos;
 using TravelApp.Travel;
+using TravelApp.Users.Dto;
 
 namespace TravelApp.Travel
 {
@@ -36,10 +37,10 @@ namespace TravelApp.Travel
         Task<PagedResultDto<ProjectListDto>> GetPaged(GetProjectsInput input);
 
 
-		/// <summary>
-		/// 通过指定id获取ProjectListDto信息
-		/// </summary>
-		Task<ProjectListDto> GetById(EntityDto<int> input);
+        /// <summary>
+        /// 通过指定id获取ProjectListDto信息
+        /// </summary>
+        Task<ProjectListDto> GetById(EntityDto<int> input);
 
 
         /// <summary>
@@ -57,7 +58,6 @@ namespace TravelApp.Travel
         /// <returns></returns>
         Task CreateOrUpdate(CreateOrUpdateProjectInput input);
 
-
         /// <summary>
         /// 删除Project信息的方法
         /// </summary>
@@ -72,13 +72,26 @@ namespace TravelApp.Travel
         Task BatchDelete(List<int> input);
 
 
-		/// <summary>
+        /// <summary>
         /// 导出Project为excel表
         /// </summary>
         /// <returns></returns>
-		//Task<FileDto> GetToExcel();
+        //Task<FileDto> GetToExcel();
 
-        Task<PagedResultDto<ProjectListDto>>GetProjectList(GetProjectsInput input);
+        Task<PagedResultDto<ProjectListDto>> GetProjectList(GetProjectsInput input);
+
+        /// <summary>
+        /// 更新推荐状态
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task ChangeProjectRecommendState(ChangeProjectRecommendStateDto input);
+        /// <summary>
+        /// 更新审核状态
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task ChangeProjectAuditState(ChangeProjectRecommendStateDto input);
 
     }
 }

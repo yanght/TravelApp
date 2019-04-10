@@ -19,7 +19,7 @@ namespace TravelApp.Web.Startup
         }
 
         public override void PreInitialize()
-        {
+        {            
             //Abp.AspNetCore.Configuration.AbpAspNetCoreConfiguration.
             Configuration.Navigation.Providers.Add<TravelAppNavigationProvider>();
         }

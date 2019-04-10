@@ -27,17 +27,8 @@
             , { field: 'categoryName', title: '所属分类' }
             , { field: 'price', title: '价格' }
             , { field: 'startDate', title: '发团日期' }
-            , {
-                field: 'isRecommend', title: '是否推荐', templet: function (res) {
-                    return res.isRecommend ? "是" : "否"
-                }
-            }
-            , {
-                field: 'state', title: '状态', templet: function (res) {
-                    if (res.state == 0) return "未审核";
-                    if (res.state == 1) return "已审核";
-                }
-            }
+            , { field: 'isRecommend', title: '是否推荐', templet: '#isRecommendTpl' }
+            , { field: 'state', title: '状态', templet: '#stateTpl' }
             , { fixed: 'right', title: '操作', toolbar: '#optbar', width: 200 }
         ]], response: {
             statusCode: 0 //重新规定成功的状态码为 200，table 组件默认为 0
@@ -51,7 +42,21 @@
             };
         }
     });
+    //监听状态操作
+    form.on('switch(state)', function (obj) {
+        _projectService.changeProjectAuditState({ id: this.value, state: obj.elem.checked ? 1 : 0 }).done(function () {
+            layer.tips("修改成功",obj.othis);
+        });
+        return false;
+    });
 
+    //监听推荐操作
+    form.on('checkbox(isRecommend)', function (obj) {
+        _projectService.changeProjectRecommendState({ id: this.value, state: obj.elem.checked ? 1 : 0 }).done(function () {
+            layer.tips("修改成功",obj.othis);
+        });
+        return false;
+    });
     //监听工具条
     table.on('tool(projectList)', function (obj) {
         var data = obj.data;
@@ -104,6 +109,9 @@
         }
     });
 
+    $("#addproject").click(function () {
+        x_admin_show("编辑线路", "/project/editproject");
+    });
 });
 
 /*用户-停用*/

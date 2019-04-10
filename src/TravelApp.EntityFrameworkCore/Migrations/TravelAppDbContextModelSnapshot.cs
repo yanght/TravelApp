@@ -15,7 +15,7 @@ namespace TravelApp.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.2.1-servicing-10028")
+                .HasAnnotation("ProductVersion", "2.2.3-servicing-35854")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -1083,7 +1083,7 @@ namespace TravelApp.Migrations
                     b.ToTable("AbpTenants");
                 });
 
-            modelBuilder.Entity("TravelApp.Travel.Category", b =>
+            modelBuilder.Entity("TravelApp.Travel.Categorys.Category", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1091,15 +1091,69 @@ namespace TravelApp.Migrations
 
                     b.Property<string>("CategoryName")
                         .IsRequired()
-                        .HasMaxLength(10);
-
-                    b.Property<bool>("Enable");
+                        .HasMaxLength(50);
 
                     b.Property<int>("ParentId");
 
+                    b.Property<int>("Sort");
+
+                    b.Property<int>("State");
+
                     b.HasKey("Id");
 
-                    b.ToTable("Categorys");
+                    b.ToTable("Category");
+                });
+
+            modelBuilder.Entity("TravelApp.Travel.Projects.Project", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("CategoryId");
+
+                    b.Property<string>("Content");
+
+                    b.Property<DateTime>("CreateTime");
+
+                    b.Property<string>("Describe");
+
+                    b.Property<bool>("IsRecommend");
+
+                    b.Property<string>("Name");
+
+                    b.Property<string>("Picture");
+
+                    b.Property<decimal>("Price");
+
+                    b.Property<string>("StartDate");
+
+                    b.Property<int>("State");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Project");
+                });
+
+            modelBuilder.Entity("TravelApp.Travel.Trips.Trip", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("CreateBy");
+
+                    b.Property<DateTime>("CreateTime");
+
+                    b.Property<int>("Status");
+
+                    b.Property<string>("TripDesc");
+
+                    b.Property<string>("TripName");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Trip");
                 });
 
             modelBuilder.Entity("Abp.Application.Features.EditionFeatureSetting", b =>

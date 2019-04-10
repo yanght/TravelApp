@@ -7,6 +7,7 @@ using TravelApp.Travel;
 using TravelApp.Travel.Categorys;
 using TravelApp.Travel.Projects;
 using TravelApp.EntityMapper.Projects;
+using TravelApp.Travel.Trips;
 
 namespace TravelApp.EntityFrameworkCore
 {
@@ -21,5 +22,6 @@ namespace TravelApp.EntityFrameworkCore
 
         public virtual DbSet<Category> Category { get; set; }
         public virtual DbSet<Project> Project { get; set; }
+        public virtual DbSet<Trip> Trip { get; set; }
     }
 }

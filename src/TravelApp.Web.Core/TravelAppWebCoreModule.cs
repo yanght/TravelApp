@@ -44,8 +44,7 @@ namespace TravelApp
             Configuration.Modules.AbpAspNetCore()
                  .CreateControllersForAppServices(
                      typeof(TravelAppApplicationModule).GetAssembly()
-                 );
-
+                 );            
             ConfigureTokenAuth();
         }
 
