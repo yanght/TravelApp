@@ -1,0 +1,16 @@
+﻿@inject TravelApp.Timing.AppTimes AppTimes
+@{
+    ViewData["Title"] = "Index";
+}
+@section Scripts{
+    <script src="~/view-resources/Views/Trip/tripAttendList.js" asp-append-version="true"></script>
+}
+<div class="layui-row">
+</div>
+<table class="layui-table" id="tripAttendList" lay-filter="tripAttendList"></table>
+
+
+<script type="text/html" id="optbar">
+    <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
+</script>
+

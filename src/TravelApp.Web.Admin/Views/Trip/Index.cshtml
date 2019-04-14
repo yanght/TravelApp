@@ -8,18 +8,15 @@
 <div class="layui-row">
 </div>
 <div class="layui-row">
-    <button class="layui-btn" id="addproject">
+    <button class="layui-btn" id="addtrip">
         <i class="layui-icon">&#xe608;</i> 添加
     </button>
 </div>
-<table class="layui-table" id="projectList" lay-filter="projectList"></table>
+<table class="layui-table" id="tripList" lay-filter="tripList"></table>
 
-<script type="text/html" id="stateTpl">
-    <input type="checkbox" name="State" value="{{d.id}}" lay-skin="switch" lay-text="审核|未审核" lay-filter="state" {{ d.state == 1 ? 'checked' : '' }}>
-</script>
 
-<script type="text/html" id="isRecommendTpl">
-    <input type="checkbox" name="IsRecommend" value="{{d.id}}" title="推荐" lay-filter="isRecommend" {{ d.isRecommend == true ? 'checked' : '' }}>
+<script type="text/html" id="statusTpl">
+    <input type="checkbox" name="Status" value="{{d.id}}" lay-skin="switch" lay-text="审核|未审核"  lay-filter="status" {{ d.status == 1 ? 'checked' : '' }}>
 </script>
 
 
@@ -28,6 +25,4 @@
     <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
 </script>
-
-
 

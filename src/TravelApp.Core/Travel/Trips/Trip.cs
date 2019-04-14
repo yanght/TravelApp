@@ -16,6 +16,10 @@ namespace TravelApp.Travel.Trips
         /// </summary>
         public string TripDesc { get; set; }
         /// <summary>
+        /// 行程价格
+        /// </summary>
+        public decimal TripPrice { get; set; }
+        /// <summary>
         /// 创建时间
         /// </summary>
         public DateTime CreateTime { get; set; }

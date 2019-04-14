@@ -16,9 +16,13 @@ namespace TravelApp.Travel.Trips.Dtos
         /// </summary>
         public string TripDesc { get; set; }
         /// <summary>
+        /// 行程价格
+        /// </summary>
+        public decimal TripPrice { get; set; }
+        /// <summary>
         /// 创建时间
         /// </summary>
-        public DateTime CreateTime { get; set; }
+        public DateTime CreateTime { get; set; } = DateTime.Now;
         /// <summary>
         /// 创建人
         /// </summary>
@@ -26,6 +30,6 @@ namespace TravelApp.Travel.Trips.Dtos
         /// <summary>
         /// 状态 1 正常 
         /// </summary>
-        public int Status { get; set; }
+        public int Status { get; set; } = 0;
     }
 }

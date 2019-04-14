@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "AddTrip";
+}
+@model TravelApp.Travel.Trips.Dtos.TripDto;
+@section Scripts{
+    <script src="~/view-resources/Views/Trip/addtrip.js" asp-append-version="true"></script>
+}
+<div class="x-body">
+    <form class="layui-form layui-form-pane">
+        <input type="hidden" id="Id" name="Id" value="@Model.Id" />
+        <div class="layui-form-item">
+            <label for="Name" class="layui-form-label">
+                <span class="x-red">*</span>行程名称
+            </label>
+            <div class="layui-input-block">
+                <input type="text" id="TripName" name="TripName" required="" lay-verify="required"
+                       autocomplete="off" class="layui-input" value="@Model.TripName">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label for="Name" class="layui-form-label">
+                <span class="x-red">*</span>行程价格
+            </label>
+            <div class="layui-input-block">
+                <input type="text" id="TripPrice" name="TripPrice" required="" lay-verify="required"
+                       autocomplete="off" class="layui-input" value="@Model.TripPrice">
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label for="Content" class="layui-form-label">
+                行程内容
+            </label>
+            <div class="layui-input-block">
+                <textarea placeholder="请输入内容" id="TripDesc" name="TripDesc" class="layui-textarea">@Model.TripDesc</textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <button class="layui-btn" lay-filter="add" lay-submit>
+                保存
+            </button>
+        </div>
+    </form>
+</div>
+
+
+

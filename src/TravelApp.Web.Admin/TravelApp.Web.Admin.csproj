@@ -2021,7 +2021,7 @@
     <PackageReference Include="Abp.HangFire" Version="4.2.0" />
     <PackageReference Include="Abp.RedisCache" Version="4.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
     <PackageReference Include="UEditor.Core" Version="1.0.6" />
   </ItemGroup>
 
@@ -2618,7 +2618,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\view-resources\Views\Trip\" />
+    <Folder Include="Models\Trip\" />
   </ItemGroup>
 
 </Project>

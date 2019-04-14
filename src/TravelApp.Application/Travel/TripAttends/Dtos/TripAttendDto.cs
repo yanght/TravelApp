@@ -1,11 +1,11 @@
-﻿using Abp.Domain.Entities;
+﻿using Abp.Application.Services.Dto;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace TravelApp.Travel.TripAttends
+namespace TravelApp.Travel.TripAttends.Dtos
 {
-    public class TripAttend : Entity<int>
+    public class TripAttendDto : EntityDto<int>
     {
         /// <summary>
         /// 班级
@@ -42,7 +42,7 @@ namespace TravelApp.Travel.TripAttends
         /// <summary>
         /// 创建时间
         /// </summary>
-        public DateTime CreateTime { get; set; }
+        public DateTime CreateTime { get; set; } = DateTime.Now;
         /// <summary>
         /// 付款时间
         /// </summary>
