@@ -1997,6 +1997,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\lib\AmazeUI-2\assets\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\lib\AmazeUI-2\assets\js\amazeui.ie8polyfill.js" />
+    <None Include="wwwroot\lib\AmazeUI-2\assets\js\amazeui.ie8polyfill.min.js" />
+    <None Include="wwwroot\lib\AmazeUI-2\assets\js\amazeui.js" />
+    <None Include="wwwroot\lib\AmazeUI-2\assets\js\amazeui.min.js" />
+    <None Include="wwwroot\lib\AmazeUI-2\assets\js\amazeui.widgets.helper.js" />
+    <None Include="wwwroot\lib\AmazeUI-2\assets\js\amazeui.widgets.helper.min.js" />
+    <None Include="wwwroot\lib\AmazeUI-2\assets\js\app.js" />
+    <None Include="wwwroot\lib\AmazeUI-2\assets\js\handlebars.min.js" />
     <None Include="wwwroot\lib\layui\font\iconfont.svg" />
     <None Include="wwwroot\lib\layui\lay\modules\carousel.js" />
     <None Include="wwwroot\lib\layui\lay\modules\code.js" />
